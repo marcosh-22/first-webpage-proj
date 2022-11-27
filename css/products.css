@@ -1,0 +1,76 @@
+.bestsale .productcard{
+    border: 3px solid #d6c101c4;
+}
+
+.bestsale h1 {
+    font-size: 25px;
+    color: #cecece;
+    margin: 36px auto;
+    text-align: center;
+}
+  
+.cardgroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+}
+  
+.productcard {
+    margin: 0 10px 10px 10px;
+    width: 300px;
+    background-color: #2c2c2c;
+    border: 3px solid #222222;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.productcardoffer {
+    border: 3px solid #d6c101c4;
+}
+  
+.productcard:hover{
+    transform: scale(0.95);
+}
+
+.productcard img{
+    width: 100%;
+    max-height: 265px;
+    border-radius: 10px;
+    border: 3px solid #222222;
+}
+
+#productinfo {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100%;
+    overflow: auto;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+#productinfo h2 {
+    font-size: 20px;
+    color: #fce304de;
+    text-align: center;
+    font-weight: 500;
+}
+
+#productinfo h3{
+    font-size: 15px;
+    color: #cecece;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#productinfo p {
+    font-size: 20px;
+    color: #6cff47;
+    border-bottom: 2px solid #6cff47;
+    border-radius: 2px;
+    line-height: 30px;
+    font-weight: 500;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt_BR" dir="ltr">
+<head>
+  <!--#region github meta-->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+  <!--#endregion github meta-->
+
+  <!--default meta-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--css meta-->
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!--js meta-->
+  <script type="module" src="js/default.js"></script>
+  <script type="module" src="js/index.js"></script>
+
+  <!--page info-->
+  <title>Império - Página principal</title>
+</head>
+<body>
+
+  <!--cabeçalho da página (header)-->
+  <header>
+
+    <!--coloque a Logo imperio à esquerda do header-->
+    <div>
+      <figure>
+        <img src="./img/logo/Logo_imperio.png" alt="Logo do Império" id="imperio_logo">
+        <img src="./img/logo/burguer.png" alt="Burguer" id="burguer">
+      </figure>
+    </div>
+
+    <!--criar botão shopping_cart à direita-->
+    <img src="img/shopping_cart.png" alt="Carrinho de compras" id="shopping_cart">
+
+    <!--Botões centrais-->
+    <div class="center" >
+      <nav id="navbuttons">
+        <ul><a id="promo">Promoções</a></ul>
+        <ul><a id="info">Informações</a></ul>
+        <ul><a href="./menu.html" id="card">Cardápio</a></ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+
+    <!--Sobre nós (inicio da página)-->
+    <section class="sectionabout" style="min-height: 337px;">
+      <div id="secdiv">
+
+        <!--Imagem de fundo-->
+        <span>
+          <span style="background-image: url(./img/fundo.png ); height: 609px; transform: translate(0px, 75.8455px);"></span>
+        </span>
+
+        <!--Texto sobre a imperio-->
+        <div class="aboutimperio">
+          <h1>Tudo sobre a Império</h1>
+          <br><br>
+          <p>A Império dispõe-se a servir produtos de alta qualidade, usando os melhores ingredientes cuidadosamente escolhidos e obtidos localmente. A nossa missão é oferecer aos nossos clientes uma experiência gastronômica única, com um serviço de excelência e um ambiente acolhedor.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <br><br><br><br><br><br><br><br>
+
+    <!--Produtos mais vendidos-->
+    <section id="jsbestsale" class="bestsale" style="background: rgb(43, 43, 43); padding: 1px 0 20px 0;">
+
+      <h1>Nossas melhores ofertas</h1>
+
+      <!--classe que engloba todos os cards de produtos-->
+      <div class="cardgroup">
+
+        <!--#region cards dos produtos-->
+        
+        <div class="productcard">
+
+          <img src="./img/products/p1.png">
+          <div id="productinfo">
+            <div>
+              <h2>Cheeseburger</h2>
+              <h3>Pão bola, Alface, Tomate, Queijo Mussarela, Carne e Molho Especial.</h3>
+            </div>
+            <p>R$ 15,00</p>
+          </div>
+
+        </div>
+
+        <div class="productcard">
+
+          <img src="./img/products/p2.png">
+          <div id="productinfo">
+            <div>
+              <h2>Chicken Burguer</h2>
+              <h3>Pão bola, Alface, Tomate, Presunto, Frango e Molho especial.</h3>
+            </div>
+            <p>R$ 15,00</p>
+          </div>
+
+        </div>
+
+        <div class="productcard">
+
+          <img src="./img/products/p3.png">
+          <div id="productinfo">
+            <div>
+              <h2>X-Salada</h2>
+              <h3>Pão bola, Alface, Tomate, Queijo Mussarela, Picles e Presunto.</h3>
+            </div>
+            <p>R$ 15,00</p>
+          </div>
+
+        </div>
+
+        <!--#endregion cards dos produtos-->
+
+      </div>
+        
+    </section>
+    
+    <!--Nossa história-->
+    <section id="jsinfo" class="story">
+
+      <!--Fotos da equipe-->
+      <div id="teamphotos">
+        <img src="./img/Photo teams.png">
+      </div>
+
+      <!--Texto da nossa história-->
+      <div id="text">
+
+        <h1>Nossa História</h1>
+          <br>
+        <h2>Bem-vindo ao Império</h2>
+          <br>
+        <p>Em 2018, a Império nasceu do sonho de um grupo de amigos, que tinham como objetivo criar um lugar para que todos pudessem se sentir em casa, com a melhor comida da cidade. A Império é um restaurante familiar, que oferece um ambiente acolhedor, com um serviço de excelência e uma cozinha de qualidade, que se destaca pela sua diversidade e criatividade.</p>
+      
+      </div>
+
+    </section>
+
+  </main>
+
+  <!--Rodapé da página-->
+  <footer>
+
+    <img src="./img/logo/Logo_imperio.png">
+    <section>
+
+      <!--put instagram.png at next of @imperio_burguer-->
+      <img src="./img/logo/instagram.png" class="instragram">
+      <p>@império_burguer</p>
+      <img src="./img/logo/whatsapp.png" class="whatsapp">
+      <p>(85) 98574-4822</p>
+    </section>
+    <p style="font-size: 75%;">© 2022 Império. Todos os direitos reservados.</p>
+    
+  </footer>
+</body>
+</html>

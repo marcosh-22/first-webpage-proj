@@ -1,0 +1,121 @@
+/*reset all the margins*/
+* { 
+    margin: 0;
+    padding: 0 
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #333;
+}
+
+/*#region header*/
+
+header {
+    background-color: #292929; 
+    height: 100px; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 3px solid rgb(34, 34, 34);
+    z-index: 99;
+}
+
+#imperio_logo{
+    float: left;
+    margin: 0 20px 0 20px;
+    height: 100px;
+}
+
+#burguer {
+    float: left;
+    margin: 37.5px 20px 0 0;
+    height: 25px;
+}
+
+#shopping_cart {
+    float: right;
+    margin: 25px 20px 0 0;
+    height: 50px;
+}
+
+/*#region center*/
+
+.center {
+    float: right;
+    margin: 37.5px auto;;
+    width: 50vw;
+}
+
+.center a{
+    margin: 0 5vw 0 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.center a:hover{
+    background-color: white;
+    color: #292929;
+}
+
+.center nav{
+    list-style: none;
+    text-align: center;
+}
+
+.center ul {
+    display: inline-block;
+}
+
+/*#endregion center*/
+
+/*#endregion header*/
+
+/*#region footer*/
+
+footer{
+    background-color: #292929;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    border-top: 3px solid #222222;
+}
+footer p {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+   
+footer img{
+    width: 160px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+  
+footer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+}
+  
+.instragram{
+    width: 30px;
+    height: 30px;
+}
+  
+.whatsapp{
+    width: 40px;
+    height: 40px;
+}
+
+/*#endregion*/

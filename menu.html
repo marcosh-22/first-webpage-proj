@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt_BR" dir="ltr">
+<head>
+  <!--#region github meta-->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+  <!--#endregion github meta-->
+
+  <!--default meta-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--css meta-->
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/menu.css">
+
+  <!--js meta-->
+  <script type="module" src="js/default.js"></script>
+  <script type="module" src="js/menu.js" defer></script>
+
+  <!--page info-->
+  <title>Império - Cardápio</title>
+</head>
+<body>
+  
+  <!--cabeçalho da página (header)-->
+  <header>
+
+    <!--coloque a Logo imperio à esquerda do header-->
+    <div>
+      <figure>
+        <img src="img/logo/Logo_imperio.png" alt="Logo do Império" id="imperio_logo">
+        <img src="img/logo/burguer.png" alt="Burguer" id="burguer">
+      </figure>
+    </div>
+
+    <!--criar botão shopping_cart à direita-->
+    <img src="img/shopping_cart.png" alt="Carrinho de compras" id="shopping_cart">
+
+    <!--Botões centrais-->
+    <div class="center">
+      <nav>
+        <ul><a href="./index.html">Promoções</a></ul>
+        <ul><a href="./index.html">Informações</a></ul>
+        <ul><a href="/menu.html">Cardápio</a></ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <section style="background: rgb(43, 43, 43); padding: 1px 0 0 0;">
+
+      <section class="bestsale">
+
+        <div class="text">
+          <h1>Os mais vendidos da semana</h1>
+          <h2>Uma experiência gastronômica incrível.</h2>
+        </div>
+
+        <!--classe que engloba todos os cards de produtos-->
+        <div class="cardgroup">
+
+          <!--#region cards dos produtos-->
+          
+          <div class="productcard">
+
+            <img src="./img/products/p1.png">
+            <div id="productinfo">
+              <div>
+                <h2>Cheeseburger</h2>
+                <h3>Pão bola, Alface, Tomate, Queijo Mussarela, Carne e Molho Especial.</h3>
+              </div>
+              <p>R$ 15,00</p>
+            </div>
+
+          </div>
+
+          <div class="productcard">
+
+            <img src="./img/products/p2.png">
+            <div id="productinfo">
+              <div>
+                <h2>Chicken Burguer</h2>
+                <h3>Pão bola, Alface, Tomate, Presunto, Frango e Molho especial.</h3>
+              </div>
+              <p>R$ 15,00</p>
+            </div>
+
+          </div>
+
+          <div class="productcard">
+
+            <img src="./img/products/p3.png">
+            <div id="productinfo">
+              <div>
+                <h2>X-Salada</h2>
+                <h3>Pão bola, Alface, Tomate, Queijo Mussarela, Picles e Presunto.</h3>
+              </div>
+              <p>R$ 15,00</p>
+            </div>
+
+          </div>
+
+          <!--#endregion cards dos produtos-->
+
+        </div>
+
+      </section>
+
+      <section style="background-color: rgb(41, 41, 41); padding: 1px 0 20px 0; border-top:5px rgb(51, 51, 51) solid; border-bottom:5px rgb(51, 51, 51) solid;">
+          
+          <div class="text">
+            <h1>Nosso cardápio</h1>
+            <h2>Somente os melhores da região</h2>
+          </div>
+
+          <nav id="navSlider">
+            <ul>
+
+              <li id="burguers" class="active">
+
+                <img src="./img/slideicons/burguers-active.png"/>
+                <p>Lanches</p>
+
+              </li>
+
+              <li id="drinks" class="">
+
+                <img src="./img/slideicons/drinks.png"/>
+                <p>Bebidas</p>
+
+              </li>
+
+            </ul>
+          </nav>
+
+          <!--div que engloba todos os cards de burguers-->
+          <div id="burguerspanel" class="activePanel">
+            <div class="cardgroup">
+    
+              <!--#region cards dos produtos-->
+              
+              <div class="productcard">
+    
+                <img src="./img/products/b1.jpg">
+                <div id="productinfo">
+                  <div>
+                    <h2>Egg Burguer</h2>
+                    <h3>Pão Bola, Maionese da Casa, Hambúrguer prensado, Queijo Cheddar, Ovo frito e Bacon em tiras.</h3>
+                  </div>
+                  <p>R$ 24,90</p>
+                </div>
+    
+              </div>
+    
+              <div class="productcard">
+    
+                <img src="./img/products/b2.jpg">
+                <div id="productinfo">
+                  <div>
+                    <h2>Smash Salada Burguer</h2>
+                    <h3>Pão Bola, Maionese da Casa, Hambúrguer prensado, Queijo Cheddar, Cebola roxa, Alface e Tomate.</h3>
+                  </div>
+                  <p>R$ 19,90</p>
+                </div>
+    
+              </div>
+    
+              <div class="productcard">
+
+                <img src="./img/products/b3.jpg">
+                <div id="productinfo">
+                  <div>
+                    <h2>Salmão Burguer</h2>
+                    <h3>Pão da Casa, Maionese de Ervas Finas, Hambúrguer de Salmão, Molho Tarê, Cream Cheese e Cebolinha.</h3>
+                  </div>
+                  <p>R$ 29,90</p>
+                </div>
+    
+              </div>
+
+              <div class="productcard">
+    
+                <img src="./img/products/b4.jpg">
+                <div id="productinfo">
+                  <div>
+                    <h2>Burguer Cheedar</h2>
+                    <h3>Pão Australiano, Maionese da Casa, Hambúrguer, Cheddar, Cebola caramelizada e Bacon crocante.</h3>
+                  </div>
+                  <p>R$ 21,90</p>
+                </div>
+    
+              </div>
+
+              <div class="productcard">
+    
+                <img src="./img/products/b5.jpg">
+                <div id="productinfo">
+                  <div>
+                    <h2>Burguer Costela</h2>
+                    <h3>Pão e Maionese da Casa, Bacon crocante, Hambúrguer de Costela, Queijo Provolone, Molho Barbecue e Cebola Roxa.</h3>
+                  </div>
+                  <p>R$ 32,90</p>
+                </div>
+    
+              </div>
+
+              <div class="productcard">
+    
+                <img src="./img/products/b6.jpg">
+                <div id="productinfo">
+                  <div>
+                    <h2>Big Burguer</h2>
+                    <h3>Pão da Casa, Maionese de Bacon, Hambúrguer, Queijo Muçarela, Cebola Roxa, Alface e Tomate.</h3>
+                  </div>
+                  <p>R$ 24,90</p>
+                </div>
+    
+              </div>
+    
+              <!--#endregion cards dos produtos-->
+    
+            </div>
+          </div>
+
+           <!--div que engloba todos os cards de drinks-->
+          <div id="drinkspanel" style="display: none;">
+            <div class="cardgroup">
+
+              <div class="drinkcard">
+    
+                <img src="./img/products/cocacola.png">
+                <div id="productinfo">
+
+                  <div>
+                    <h2>Nome da bebida</h2>
+                    <h3>Bebida</h3>
+                  </div>
+                  <p>R$ 00,00</p>
+
+                </div>
+
+              </div>
+            </div>
+          
+          </div>
+        
+      </section>
+    </section>
+  </main>
+
+  <div class="widget">
+    <img src="./img/shack-burguer.png">
+  </div>
+
+  <!--Rodapé da página-->
+  <footer>
+
+    <img src="./img/logo/Logo_imperio.png">
+    <section>
+      <!--put instagram.png at next of @imperio_burguer-->
+      <img src="./img/logo/instagram.png" class="instragram">
+      <p>@império_burguer</p>
+      <img src="./img/logo/whatsapp.png" class="whatsapp">
+      <p>(85) 98574-4822</p>
+    </section>
+    <p style="font-size: 75%; padding-bottom:calc(100vh - 320px);">© 2022 Império. Todos os direitos reservados.</p>
+
+  </footer>
+</body>
+</html>
