@@ -11,6 +11,10 @@ body {
     background: #333;
 }
 
+#navbuttons a{
+    cursor: pointer;
+}
+
 /*#region header*/
 
 header {
@@ -21,6 +25,10 @@ header {
     top: 0;
     border-bottom: 3px solid rgb(34, 34, 34);
     z-index: 99;
+}
+
+.home{
+    cursor: pointer;
 }
 
 #imperio_logo{
@@ -44,18 +52,22 @@ header {
 /*#region center*/
 
 .center {
-    float: right;
-    margin: 37.5px auto;;
-    width: 50vw;
+    display: flex;
+    justify-content: right;
+    align-items:flex-end;
+    margin: 37.5px auto;
 }
 
 .center a{
-    margin: 0 5vw 0 0;
+    background-color: #333333;
+    margin: 0 2vw 0 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     text-decoration: none;
     padding: 10px;
     border-radius: 10%;
+    box-shadow: 1px 3px 3px black;
+    transition: all 0.2s ease;
 }
 
 .center a:hover{
