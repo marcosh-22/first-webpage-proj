@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/cartconfirm.css">
 
   <!--js meta-->
   <script type="module" src="js/default.js"></script>
@@ -25,7 +26,7 @@
   <title>Império - Cardápio</title>
 </head>
 <body>
-  
+
   <!--cabeçalho da página (header)-->
   <header>
 
@@ -36,6 +37,29 @@
     <!--criar botão shopping_cart à direita-->
     <img src="./img/shopping_cart.png" alt="Carrinho de compras" id="shopping_cart" />
 
+    <!--html para uso em js no carrinho-->
+    <div id="cart_productjs" style="display: none;">
+      <div class="cart_product">
+        <img class="cart_product_img" src="./img/products/b1.jpg" />
+        <div>
+          <p class="cart_product_name">Cheeseburger</p>
+          <p class="cart_product_price">R$ 10,00</p>
+        </div>
+        <div class="cart_options">
+          <p class="cart_remove">X</p>
+          <p class="cart_qtd">x1</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="cartmenu" style="display: none;">
+      <div id="box">
+        <div id="cartmenu_content">
+
+        </div>
+      </div>
+    </div>
+
     <!--Botões centrais-->
     <nav class="center" id="navbuttons">
       <ul><a id="promo">Promoções</a></ul>
@@ -44,6 +68,28 @@
     </nav>
 
   </header>
+
+  <div class="cartconfirm">
+    <div id="popup-content">
+      <h1>Deseja adicionar ao carrinho?</h1>
+      <h2 id="name">Nome do produto</h2>
+      <h3 id="desc">Descrição do produto</h3>
+      <h4 id="price">R$ 00,00</h4>
+      <div id="qtd">
+          <select name="quantidade" id="qtdselect">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+          </select>
+      </div>
+      <div id="confirmbtns">
+          <button id="yes">Sim</button>
+          <button id="no">Não</button>
+      </div>
+    </div>
+  </div>
 
   <main>
     <section style="background: rgb(43, 43, 43); padding: 1px 0 0 0;">
