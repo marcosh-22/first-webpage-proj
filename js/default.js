@@ -4,7 +4,7 @@ var homebuttons = document.getElementsByClassName("home");
 
 //Pega todos os cards
 var productcard = document.getElementsByClassName("productcard");
-var drinkscard = document.getElementsByClassName("drinkscard");
+var drinkscard = document.getElementsByClassName("drinkcard");
 
 var menubtn_onClick = function(e) {
     //Pegar o elemento que foi clicado
@@ -38,7 +38,8 @@ var originalPrice;
 var card_onClick = function(e) {
     //Pegar o elemento que foi clicado
     var target = e.target;
-    target = getParentByClass(target, 'productcard');
+
+    target = getParentByClass(target, 'productcard', 'drinkcard');
     if (target){
         let cartpopup = document.getElementsByClassName("cartconfirm")[0];
         cartpopup.style.display = "flex";
@@ -50,7 +51,10 @@ var card_onClick = function(e) {
 
         //Definir valores no popup
         document.getElementById("name").innerHTML = targetName.innerHTML;
-        document.getElementById("desc").innerHTML = targetDesc.innerHTML;
+        if (targetDesc == undefined)
+            document.getElementById("desc").innerHTML = "";
+        else
+            document.getElementById("desc").innerHTML = targetDesc.innerHTML;
         document.getElementById("price").innerHTML = targetPrice.innerHTML;
         document.getElementById("qtdselect").value = 1;
 
@@ -59,9 +63,9 @@ var card_onClick = function(e) {
     }
 };
 
-function getParentByClass(el, className) {
+function getParentByClass(el, className, alternativeclassName) {
     do {
-        if (el.classList.contains(className)) {
+        if (el.classList.contains(className) || el.classList.contains(alternativeclassName)) {
             return el;
         } else {
             el = el.parentNode;
@@ -134,6 +138,11 @@ var confirmbtn_onClick = function(e) {
             cart_productjs.children[1].children[0].innerHTML = name;
             cart_productjs.children[1].children[1].innerHTML = price;
             cart_productjs.children[2].children[1].innerHTML = "x" + qtd;
+
+            //Mudar foto do produto
+            let img = cart_productjs.children[0];
+
+            img.src = "./img/products/" + name.toLowerCase().replace(/\s+/g, '') + ".png";
 
             //Salvar html do cart_productjs no localstorage
             cartmenu_content_arr.push(cart_productjs.outerHTML);

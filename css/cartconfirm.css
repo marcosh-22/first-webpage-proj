@@ -179,15 +179,10 @@
 }
 
 .cart_options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     margin-top: 10px;
-    /*align children items in Y axys*/
     align-content: center;
-    
+    float:right;
 }
 
 .cart_qtd{
