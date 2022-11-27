@@ -62,6 +62,13 @@ body {
 }
 /*#endregion about*/
 
+#infoimg {
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+  max-width: 900px;
+}
+
 /*#region story*/
 .story {
   margin: 40px auto;
@@ -97,5 +104,9 @@ body {
   clear: both;
   width: 30%;
   min-width: 300px;
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 /*#endregion story*/
