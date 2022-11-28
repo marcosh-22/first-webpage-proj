@@ -33,20 +33,20 @@ header {
 
 #imperio_logo{
     float: left;
-    margin: 0 20px 0 20px;
-    height: 100px;
+    margin: 5px 20px 0 40px;
+    height: 90px;
 }
 
 #burguer {
     float: left;
-    margin: 37.5px 20px 0 0;
-    height: 25px;
+    margin: 8px 20px 0 0;
+    height: 65px;
 }
 
 #shopping_cart {
     float: right;
     cursor: pointer;
-    margin: 20px 20px 0 0;
+    margin: 20px 40px 0 0;
     height: 50px;
     border: 2px solid #02a14d;
     border-radius: 50%;
